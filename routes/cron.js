@@ -9,7 +9,7 @@ router.get('/check-unread', async (req, res) => {
       SELECT id, sender_name, text, created_at
       FROM messages
       WHERE email_notified = FALSE
-        AND created_at < NOW() - INTERVAL '20 minutes'
+        AND created_at < NOW() - INTERVAL '5 minutes'
     `);
 
     const unreadMessages = result.rows;
