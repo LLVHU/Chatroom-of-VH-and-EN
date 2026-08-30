@@ -18,7 +18,7 @@ async function sendUnreadNotification(sender, messagePreview) {
       from: 'Pocket Chat <onboarding@resend.dev>',
       to: recipient,
       subject: `[聊天室提醒] ${sender} 发来了新消息`,
-      text: `${sender} 20分钟前给你发了消息还没有回复。
+      text: `${sender} 5分钟前给你发了消息还没有回复。
 
 "${messagePreview}"
 
