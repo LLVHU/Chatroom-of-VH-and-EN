@@ -4,6 +4,10 @@
 //  1. Serves the web page (the files in the /public folder) to anyone who visits.
 //  2. Keeps a live WebSocket connection open with every connected phone/browser,
 //     so messages can be pushed out instantly without anyone hitting "refresh".
+
+const dns = require('dns');
+dns.setDefaultResultOrder('ipv4first');
+
 const express = require('express');
 const http = require('http');
 const path = require('path');
